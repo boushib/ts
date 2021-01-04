@@ -7,7 +7,7 @@
 interface IPoint {
   x: number,
   y: number,
-  drawPoint: () => void
+  draw: () => void
 }
 
 class Point implements IPoint {
@@ -19,12 +19,12 @@ class Point implements IPoint {
     this.y = y ?? 0
   }
   
-  drawPoint() {
+  draw() {
     console.log(`Let's draw a point giving x: ${this.x} & y: ${this.y}`)
   }
 }
 
 let pointA = new Point(100, 200)
 let pointB = new Point()
-pointA.drawPoint()
-pointB.drawPoint()
+pointA.draw()
+pointB.draw()
