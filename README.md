@@ -6,4 +6,4 @@ Install typescript
 
 Compile & run the app.ts file:
 
-`tsc -t es5 app.ts && node app.js`
+`npm run build`
