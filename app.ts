@@ -4,17 +4,15 @@
 //   BLUE
 // }
 
-interface IPoint {
-  x: number,
-  y: number,
-  draw: () => void
-}
+// interface IPoint {
+//   x: number,
+//   y: number,
+//   draw: () => void
+// }
 
-class Point implements IPoint {
-  x: number
-  y: number
-
-  constructor(x?: number, y?: number){
+//class Point implements IPoint {
+class Point {
+  constructor(private x?: number, private y?: number){
     this.x = x ?? 0
     this.y = y ?? 0
   }
