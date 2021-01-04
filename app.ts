@@ -12,17 +12,21 @@
 
 //class Point implements IPoint {
 class Point {
-  constructor(private x?: number, private y?: number){
-    this.x = x ?? 0
-    this.y = y ?? 0
+  constructor(private _x: number, private _y: number){
   }
   
   draw() {
-    console.log(`Let's draw a point giving x: ${this.x} & y: ${this.y}`)
+    console.log(`Let's draw a point giving x: ${this._x} & y: ${this._y}`)
+  }
+
+  get x(){
+    return this._x
+  }
+
+  set x(value: number){
+    this._x = value;
   }
 }
 
 let pointA = new Point(100, 200)
-let pointB = new Point()
 pointA.draw()
-pointB.draw()
