@@ -17,7 +17,7 @@ export default class Point {
     return this._x
   }
 
-  set x(value: number) {
+  set x(value) {
     this._x = value;
   }
 }
